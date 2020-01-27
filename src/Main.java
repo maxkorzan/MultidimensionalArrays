@@ -41,6 +41,18 @@ public class Main {
         }
 
 
+        //MULTIPLICATION TABLE
+        int[][] multip = new int[12][12];
+
+        for(int i=1; i<=multip.length; i++){
+            for(int j=1; j<=multip.length; j++){
+                System.out.print(i*j);
+                System.out.print('\t');
+            }
+            System.out.println();
+        }
+
+
 
 
 
