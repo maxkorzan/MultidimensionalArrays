@@ -33,8 +33,8 @@ public class Main {
 
         int[][] rowsAndColumns = new int[5][10];
 
-        for(int i=0; i<rowsAndColumns.length; i++){
-            for(int j=0; j<rowsAndColumns.length; j++){
+        for(int i=0; i<10; i++){
+            for(int j=0; j<5; j++){
                 System.out.print("row "+i+" col "+j+" ");
             }
             System.out.println();
