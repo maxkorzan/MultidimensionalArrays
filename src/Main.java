@@ -2,11 +2,12 @@ public class Main {
     public static void main(String[] args) {
 
         //PRINT ROWS AND COLUMNS
-        int[][] rowsAndColumns = new int[5][10];
+        String[][] rowsAndColumns = new String[5][10];
 
-        for(int i=0; i<10; i++){
-            for(int j=0; j<5; j++){
-                System.out.print("row "+i+" col "+j+" ");
+        for(int row=0; row<10; row++){
+            for(int col=0; col<5; col++){
+                rowsAndColumns[col][row] = ("row "+row+" col "+col+" ");
+                System.out.print(rowsAndColumns[col][row]);
             }
             System.out.println();
         }
@@ -15,10 +16,12 @@ public class Main {
         //MULTIPLICATION TABLE
         int[][] multip = new int[12][12];
 
-        for(int i=1; i<=multip.length; i++){
-            for(int j=1; j<=multip.length; j++){
-                System.out.print(i*j);
+        for(int i=0; i<multip.length; i++){
+            for(int j=0; j<multip.length; j++){
+                multip[j][i] = (j+1)*(i+1);
+                System.out.print(multip[j][i]);
                 System.out.print('\t');
+
             }
             System.out.println();
         }
